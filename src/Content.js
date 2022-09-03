@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
 const Content = () => {
-    const [name, setName] = useState('Dave');
+    const [name, setName] = useState('Dave'); // dodeljuje pocetnu vrednost name
     const [count, setCount] = useState(0);  // postavlja brojac na nulu
 
     const handleNameChange = () => {
-        const names = ['Bob', 'Kevin', 'Dave'];
+        const names = ['Bob', 'Kevin', 'Dave']; // niz sa imenima stavlja u const
         const int = Math.floor(Math.random() * 3); 
         setName(names[int]); // pozivamo setName koja menja prvu vrednost name iz Content
     }
